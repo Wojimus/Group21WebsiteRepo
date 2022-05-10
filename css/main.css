@@ -1,0 +1,817 @@
+/*.container {*/
+/*    background-color: brown;*/
+/*}*/
+
+/*.row {*/
+/*    background-color: burlywood;*/
+/*}*/
+
+/*[class*="col-"] {*/
+/*    float: left;*/
+/*    padding-left: 15px;*/
+/*    padding-right: 45px;*/
+/*    background-color: brown;*/
+/*}*/
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1600px;
+    }
+}
+
+/* Bootstrap container */
+.container {
+    background-color: #F2F2F2;
+}
+
+/* Link Styling */
+
+a:link {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+a:active {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+a.contentLink:link {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+a.contentLink:visited {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+a.contentLink:hover {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+a.contentLink:active {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+/* Background Images and Colours */
+
+.backgroundImage {
+    background-image: url("../Resources/BackgroundImages/AutumnLeavesBigBen.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.blurredBackgroundImage {
+    background-image: url("../Resources/BackgroundImages/AutumnLeavesBigBenBlurred.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bodyBackground {
+    min-height: 93vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 15px solid #2D2D2D;
+    border-right: 15px solid #2D2D2D;
+}
+
+/* Header and Footer */
+
+a.focusedNav:link{
+    color: #2679c7;
+}
+
+a.focusedNav:visited {
+    color: #2679c7;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2D2D2D;
+    color: #F2F2F2;
+    min-height: 7vh;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    opacity: 95%;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+}
+
+.mobileIcon {
+    height: 6vh;
+    width: 6vh;
+    float: right;
+}
+
+#cityIcon {
+    background: url("../Resources/Icons/city.png") no-repeat;
+    background-size:contain;
+}
+
+#cityIcon:visited {
+    background: url("../Resources/Icons/city.png") no-repeat;
+    background-size:contain;
+}
+
+#cityIcon:hover {
+    background: url("../Resources/Icons/cityBlue.png") no-repeat;
+    background-size:contain;
+}
+
+#cityIcon.focusedIcon {
+    background: url("../Resources/Icons/cityBlue.png") no-repeat;
+    background-size:contain;
+}
+
+#attractionIcon {
+    background: url("../Resources/Icons/attraction.png") no-repeat;
+    background-size:contain;
+}
+
+#attractionIcon:visited {
+    background: url("../Resources/Icons/attraction.png") no-repeat;
+    background-size:contain;
+}
+
+#attractionIcon:hover {
+    background: url("../Resources/Icons/attractionBlue.png") no-repeat;
+    background-size:contain;
+}
+
+#attractionIcon.focusedIcon {
+    background: url("../Resources/Icons/attractionBlue.png") no-repeat;
+    background-size:contain;
+}
+
+#accountIcon {
+    background: url("../Resources/Icons/account.png") no-repeat;
+    background-size:contain;
+}
+
+#accountIcon:visited {
+    background: url("../Resources/Icons/account.png") no-repeat;
+    background-size:contain;
+}
+
+#accountIcon:hover {
+    background: url("../Resources/Icons/accountBlue.png") no-repeat;
+    background-size:contain;
+}
+
+#accountIcon.focusedIcon {
+    background: url("../Resources/Icons/accountBlue.png") no-repeat;
+    background-size:contain;
+}
+
+.footerContainer {
+    position: relative;
+    padding-top: 4vh;
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2D2D2D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 4vh;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+.navigationRow {
+    padding: 5px 0px 5px 0px;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    color: #2D2D2D;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigationItemContainer {
+    padding: 0px 20px 0px 20px;
+}
+
+a.navigationItem:link {
+    color: #2D2D2D;
+}
+
+a.navigationItem:visited {
+    color: #2D2D2D;
+}
+
+a.navigationItem:hover {
+    color: #2679c7;
+}
+
+.copyrightText {
+    font-family: Arial;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.cityGalleryContainer {
+    background-color: #F2F2F2;
+}
+
+/* Logo */
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Homepage Search */
+
+.homeSearchContainer {
+    height: 93vh;
+}
+
+.homeSearchText {
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    color: #2D2D2D;
+}
+
+.homeSearchBar {
+    border: none;
+    background-color: white;
+    color: #2679c7;
+    height: 60px;
+    max-width: 400px;
+    min-width: 30%;
+    padding: 10px;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    font-family: 'bebas Neue';
+    font-size: 25px;
+    margin: 0px -10px 0px -10px;
+}
+
+.homeSearchButton {
+    font-family: 'bebas Neue';
+    font-size: 25px;
+    height: 60px;
+    background: #2D2D2D;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Search Styling */
+
+.searchSubHeading {
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+}
+
+.searchBarContainer {
+    padding-bottom: 20px;
+}
+
+.SearchBar {
+    border: none;
+    background-color: white;
+    color: #2679c7;
+    height: 60px;
+    width: 70%;
+
+    border: 4px solid #2679c7;
+    border-radius: 5px;
+    font-family: 'bebas Neue';
+    font-size: 25px;
+    margin: 0px -10px 0px -10px;
+}
+
+.SearchButton {
+    font-family: 'bebas Neue';
+    font-size: 25px;
+    height: 60px;
+    background: #2D2D2D;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+}
+
+/* City Styling */
+
+.cityTitle {
+    font-family: 'bebas Neue';
+    font-size: 7vmin;
+    padding: 20px 0px 0px 10px;
+    margin-bottom: -20px;
+}
+
+.pageTitle {
+    font-family: 'bebas Neue';
+    font-size: 7vmin;
+    padding: 20px 0px 0px 10px;
+    line-height: 1.1;
+}
+
+.titleHighlight {
+    color: #2679c7;
+}
+
+.cityTemperature {
+    color: #2679c7;
+    font-size: 4vmin;
+}
+
+.cityDescription {
+    white-space: pre-line;
+    font-family: 'Poppins', sans-serif;
+}
+
+.citySeparatorText {
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+a.cityAttractionLink:link {
+    color: black;
+}
+
+a.cityAttractionLink:hover {
+    color: black;
+}
+
+a.cityAttractionLink:visited {
+    color: black;
+}
+
+.cityAttraction {
+    border: 4px solid #2D2D2D;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.cityAttractionImage {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.cityAttractionBlurb {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    padding-right: 10px;
+}
+
+.cityAttractionTitle {
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: #2D2D2D;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: -10px;
+}
+
+.cityGalleryImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid #2D2D2D;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.seeAll {
+    font-family: 'Signika', sans-serif;
+    padding-left: 10px;
+}
+
+.seeAllRow {
+    margin-bottom: -10px;
+}
+
+a.seeAll:link{
+    color: black;
+}
+
+a.seeAll:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a.seeAll:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Attraction Styling */
+
+.attractionTitle {
+    font-family: 'bebas Neue';
+    font-size: 40px;
+    padding: 20px 0px 0px 10px;
+    line-height: 1.1;
+}
+
+.attractionDetails {
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    padding: 20px 0px 0px 20px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.attractionSubTitle {
+    color: #2679c7;
+}
+
+.attractionImageContainer {
+    padding: 40px 00px 00px 00px;
+}
+
+.attractionImage {
+    max-height: 400px;
+    width: 70%;
+    border: 8px solid #2D2D2D;
+    margin-bottom: 40px;
+}
+
+.attractionDescription {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.attractionPrice {
+    color: #2679c7;
+    font-family: 'bebas Neue';
+    font-size: 40px;
+}
+
+.starIcon {
+    max-height: 20px;
+    width: auto;
+}
+
+/* Login Styling */
+
+.loginHeading {
+    font-family: 'bebas Neue';
+    font-size: 4vmin;
+    padding: 20px 0px 0px 10px;
+}
+
+.loginSubHeading {
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+}
+
+.loginError {
+    font-family: 'Signika', sans-serif;
+    color: red;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+a.loginSubHeading:link{
+    color: #2679c7;
+}
+
+a.loginSubHeading:hover{
+    color: #2679c7;
+}
+
+a.loginSubHeading:visited {
+    color: #2679c7;
+}
+
+.loginInput {
+    border: none;
+    background-color: white;
+    color: #2679c7;
+    height: 60px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    border: 4px solid #2679c7;
+    border-radius: 5px;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.loginButton {
+    margin-top: 10px;
+    font-family: 'bebas Neue';
+    font-size: 35px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0px 30px 0px 30px;
+    background: #2679c7;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Account Styling */
+
+.accountTitle {
+    font-family: 'bebas Neue';
+    font-size: 40px;
+    padding: 20px 0px 0px 10px;
+    line-height: 1.1;
+}
+
+.accountSubTitle {
+    color: #2679c7;
+    font-family: 'bebas Neue';
+    font-size: 30px;
+    padding: 20px 0px 0px 20px;
+    line-height: 1.1;
+}
+
+.accountInfo {
+    color: black;
+}
+
+.accountDetails {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.accountLinks {
+    margin-top: 10px;
+}
+
+.reviewImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.reviewContainer {
+    margin-top: 10px;
+}
+
+.reviewSeperator {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.reviewBlurbContainer {
+    max-height: 120px;
+    padding: 10px;
+}
+
+.reviewTitle {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: #2679c7;
+}
+
+.reviewBlurb {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.reviewInput {
+    height: 100px;
+    width: 100%;
+}
+
+.reviewContainer {
+    border: 4px solid #2D2D2D;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.reviewButton {
+    font-family: 'bebas Neue';
+    font-size: 35px;
+    height: 60px;
+    padding: 0px 30px 0px 30px;
+    background: #2679c7;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+}
+
+.deleteReviewButton {
+    font-family: 'bebas Neue';
+    font-size: 15px;
+    height: 40px;
+    min-width: 200px;
+    padding: 0px 30px 0px 30px;
+    background: #bf083c;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.attractionReview {
+    padding: 0px 20px 0px 20px;
+}
+
+.accountHeader {
+    background-color: rgba(45, 45, 45, 0.9);
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.accountHeaderActive {
+    background-color: rgba(38, 121, 199, 0.9);
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+a.accountHeader:link{
+    background-color: rgba(45, 45, 45, 0.9);
+    color: white;
+}
+
+a.accountHeader:hover{
+    background-color: rgba(38, 121, 199, 0.9);
+    color: white;
+}
+
+a.accountHeader:visited {
+    color: white;
+}
+
+a.accountHeaderActive:link{
+    background-color: rgba(38, 121, 199, 0.9);
+    color: white;
+}
+
+a.accountHeaderActive:hover{
+    background-color: rgba(38, 121, 199, 0.9);
+    color: white;
+}
+
+a.accountHeaderActive:visited {
+    color: white;
+}
+
+.logoutLink {
+    color: black;
+    font-family: 'bebas Neue';
+    font-size: 25px;
+    padding-left: 20px;
+    line-height: 1.3;
+}
+
+a.logoutLink:link{
+    color: black;
+}
+
+a.logoutLink:visited {
+    color: black;
+}
+
+a.logoutLink:hover{
+    color: #2679c7;
+}
+
+.deleteForm {
+    margin-top: 50px;
+}
+
+.deleteButton {
+    margin-top: 20px;
+    font-family: 'bebas Neue';
+    font-size: 35px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0px 30px 0px 30px;
+    background: #bf083c;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+}
+
+.accountButton {
+    margin-left: 20px;
+    font-family: 'bebas Neue';
+    font-size: 24px;
+    height: 50px;
+    min-width: 100px;
+    padding: 0px 20px 0px 20px;
+    background: #bf083c;
+    border: 4px solid #2D2D2D;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Content Separators */
+
+.separator {
+    background-color: #2D2D2D;
+    min-height: 3vh;
+}
+
+.separatorDash {
+    background-color: #2D2D2D;
+    height: 6px;
+}
+
+.separatorText {
+    font-family: 'bebas Neue';
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+/* Hamburger Menu */
+
+.hamburgerButton {
+    height: 30px;
+    width: auto;
+}
+
+/* Homepage City Icons */
+
+.cityButton {
+    border: 8px solid #2D2D2D;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.cityImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cityImageText {
+    font-family: 'bebas Neue';
+    font-size: 7vmin;
+    line-height: 80%;
+    color: #F2F2F2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 #2D2D2D, 0 1px #2D2D2D, 1px 0 #2D2D2D, 0 -1px #2D2D2D;
+    text-align: center;
+}
+
+/* References Styling */
+
+.referencesSubTitle {
+    font-family: 'bebas Neue';
+    font-size: 24px;
+    color: #2679c7;
+}
+
+.referenceImageContainer {
+    width: 100%;
+}
+
+.referenceImage {
+    border: 4px solid #2679c7;
+    width: inherit;
+    height: 20vw;
+}
