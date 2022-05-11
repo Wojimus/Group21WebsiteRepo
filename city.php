@@ -3,7 +3,7 @@
     //URL Variables
     $city = urldecode($_GET['city']);
     $backgroundURL = "Resources/Cities/" . $city . "/Background.jpg";
-    $backgroundURL = str_replace(" ", "%20", $backgroundURL);
+    $backgroundURL = str_replace(" ", "%20", $s3bucketlinkprefix . $backgroundURL);
 ?>
 <!doctype html>
 <html lang="en">
@@ -123,7 +123,7 @@
             $sql = "SELECT * FROM `cities` WHERE Name = \"". $city ."\"";
             $result = mysqli_query($conn, $sql);
             $row = mysqli_fetch_assoc($result);
-            $images = glob($row["AlbumAddress"] . "/*.jpg");
+            $images = s3Glob($s3bucket, $s3bucketlinkprefix, $row["AlbumAddress"]);
 
             $imageNum = floor(count($images) / 4) * 4;
 

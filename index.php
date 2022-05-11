@@ -61,7 +61,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=London">
                 <div class="cityButton">
-                    <img src="Resources/Cities/London/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/London/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         London
                     </div>
@@ -71,7 +71,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=Birmingham">
                 <div class="cityButton">
-                    <img src="Resources/Cities/Birmingham/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/Birmingham/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         Birmingham
                     </div>
@@ -81,7 +81,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=Edinburgh">
                 <div class="cityButton">
-                    <img src="Resources/Cities/Edinburgh/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/Edinburgh/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         Edinburgh
                     </div>
@@ -91,7 +91,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=Cardiff">
                 <div class="cityButton">
-                    <img src="Resources/Cities/Cardiff/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/Cardiff/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         Cardiff
                     </div>
@@ -101,7 +101,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=Glasgow">
                 <div class="cityButton">
-                    <img src="Resources/Cities/Glasgow/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/Glasgow/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         Glasgow
                     </div>
@@ -111,7 +111,7 @@ ExploreUK was created by Wojciech Marek,
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <a href="city.php?city=Manchester">
                 <div class="cityButton">
-                    <img src="Resources/Cities/Manchester/Background.jpg" class="cityImage">
+                    <img src=<?= $s3bucketlinkprefix . "Resources/Cities/Manchester/Background.jpg"?> class="cityImage">
                     <div class="cityImageText">
                         Manchester
                     </div>

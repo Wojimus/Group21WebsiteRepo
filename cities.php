@@ -32,7 +32,7 @@
 
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    $thumbnail = str_replace(" ", "%20", $row["AlbumAddress"]) . "/Background.jpg";
+                    $thumbnail = str_replace(" ", "%20", $s3bucketlinkprefix . $row["AlbumAddress"]) . "/Background.jpg";
                     $cityURL = "city.php?city=" . urlencode($row["Name"]);
                     ?>
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">

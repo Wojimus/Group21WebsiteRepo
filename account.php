@@ -123,9 +123,9 @@
                     $attractionLink = "attraction.php?attractionID=" . $attraction["AttractionID"];
                     //Get Image
                     $imageDir = __DIR__ . "/" . $attraction["AlbumAddress"] . "/";
-                    $thumbnail = glob($attraction["AlbumAddress"] . "/Thumbnail.jpg");
+                    $thumbnail = s3Glob($s3bucket, $s3bucketlinkprefix, $attraction["AlbumAddress"]);
                     if (count($thumbnail) == 0) {
-                        $thumbnail = "Resources/Icons/DefaultThumbnail.jpg";
+                        $thumbnail = $s3bucketlinkprefix . "Resources/Icons/DefaultThumbnail.jpg";
                     }
                     else {
                         $thumbnail = $thumbnail[0];

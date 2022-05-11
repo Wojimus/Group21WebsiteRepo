@@ -34,9 +34,9 @@
     <!--Title-->
     <div class="row attractionTitle">
         <?php
-            $thumbnail = glob($attraction["AlbumAddress"] . "/Thumbnail.jpg");
+            $thumbnail = s3Glob($s3bucket, $s3bucketlinkprefix, $attraction["AlbumAddress"]);
             if (count($thumbnail) == 0) {
-                $thumbnail = "Resources/Icons/DefaultThumbnail.jpg";
+                $thumbnail = $s3bucketlinkprefix . "Resources/Icons/DefaultThumbnail.jpg";
             } else {
                 $thumbnail = $thumbnail[0];
             }
@@ -52,12 +52,12 @@
                 }
                 for ($i = 0; $i < $fullStars; $i++) {
                     ?>
-                    <img class="starIcon" src="Resources/Icons/StarSharp.png">
+                    <img class="starIcon" src= <?php $s3bucketlinkprefix . "Resources/Icons/StarSharp.png" ?>>
                     <?php
                 }
                 if ($halfStar) {
                     ?>
-                    <img class="starIcon" src="Resources/Icons/StarHalfSharp.png">
+                    <img class="starIcon" src=<?php $s3bucketlinkprefix . "Resources/Icons/StarHalfSharp.png" ?>>
                     <?php
                 }
             ?>
@@ -127,7 +127,7 @@
             <br>
         </div>
         <?php
-            $images = glob($attraction["AlbumAddress"] . "/*.jpg");
+            $images = s3Glob($s3bucket, $s3bucketlinkprefix, $attraction["AlbumAddress"]);
 
             $imageNum = floor(count($images) / 4) * 4;
 

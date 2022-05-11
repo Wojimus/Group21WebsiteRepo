@@ -90,7 +90,7 @@
                 <div class="row">
                 <?php
                 while ($row = mysqli_fetch_assoc($citySearchResult)) {
-                    $thumbnail = str_replace(" ", "%20", $row["AlbumAddress"]) . "/Background.jpg";
+                    $thumbnail = str_replace(" ", "%20", $s3bucketlinkprefix . $row["AlbumAddress"]) . "/Background.jpg";
                     $cityURL = "city.php?city=" . urlencode($row["Name"]);
                     ?>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
@@ -155,9 +155,9 @@
                             $attractionLink = "attraction.php?attractionID=" . $row["AttractionID"];
                             //Get Image
                             $imageDir = __DIR__ . "/" . $row["AlbumAddress"] . "/";
-                            $thumbnail = glob($row["AlbumAddress"] . "/Thumbnail.jpg");
+                            $thumbnail = s3Glob($s3bucket, $s3bucketlinkprefix, $row["AlbumAddress"]);
                             if (count($thumbnail) == 0) {
-                                $thumbnail = "Resources/Icons/DefaultThumbnail.jpg";
+                                $thumbnail = $s3bucketlinkprefix . "Resources/Icons/DefaultThumbnail.jpg";
                             }
                             else {
                                 $thumbnail = $thumbnail[0];
