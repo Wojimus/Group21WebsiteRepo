@@ -17,7 +17,7 @@
     $dbname = $credentials["dbname"];
     $apiKey = $credentials["openweatherkey"];
     $s3bucket = $credentials["s3bucket"];
-    $s3bucketlinkprefix = "https://" . $s3bucket . ".s3.amazonaws.com/";
+    $s3bucketlinkprefix = $credentials["cloudfront"];
 
     //Create Database Connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
